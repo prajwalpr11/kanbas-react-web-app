@@ -1,138 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    
-    <title>Edit</title>
+
+    <title>Edit Assignment</title>
+
+    <link href="../../vendors/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" />
+    <link href="../index.css" rel="stylesheet" />
+    <link href="../home.html" rel="stylesheet"/>
+    <link href="index.css" rel="stylesheet"/>
+
+
 </head>
 <body>
-    <table >
-        <tr>
-            <td valign="top" style="padding-right: 70px;">
-                <ul>
-                    <li><a href="../account-navigation.html">Account</a></li>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="../course-navigation.html">Courses</a></li>
-                    <li><a href="#">Calender</a></li>
-                    <li><a href="#">Inbox</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Studio</a></li>
-                    <li><a href="#">Commons</a></li>
-                    <li><a href="#">Help</a></li>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col bg-black wd-nav-sidebar sticky-top d-none d-md-block">
+                <div class="text-center ">
+                    <a href="#"><img src="../../images/NEU.png" alt="Description of the image" class="img-fluid"></a>
+                </div>
+                <ul class="wd-nav-sidebar-list  list-group">
+                    <li class=" list-group-item account-icon ">
+                        <a href="../profile/index.html" >
+                            <i class="far fa-user-circle fa-2x" style="color:white;"></i><br>Account
+                        </a>
+                    </li>
+                    <li class=" list-group-item">
+                        <a href="../dashboard/index.html" >
+                            <i class="fas fa-tachometer-alt fa-fw fa-2x" ></i></br>Dashboard
+                        </a>
+                    </li>
+                    <li class="list-group-item active">
+                        <a href="../home.html" >
+                            <i class="fa-solid fa-book fa-2x" ></i></br>Courses
+                        </a>
+                    </li>
+                    <li class=" list-group-item ">
+                        <a href="#" >
+                            <i class="fa-regular fa-calendar-days fa-2x" ></i></br>Calendar
+                        </a>
+                    </li>
+                    <li class=" list-group-item ">
+                        <a href="#" >
+                            <i class="fa-solid fa-inbox fa-2x" ></i></br>Inbox
+                        </a>
+                    </li>
+                    <li class="list-group-item ">
+                        <a href="#" >
+                            <i class="fa-regular fa-clock fa-2x" ></i></br>History
+                        </a>
+                    </li>
+                    <li class=" list-group-item ">
+                        <a href="#" >
+                            <i class="fa-solid fa-microchip fa-2x" ></i></br>Studio
+                        </a>
+                    </li>
+                    <li class=" list-group-item ">
+                        <a href="#" >
+                            <i class="fa-solid fa-arrow-right-from-bracket fa-2x" ></i></br>Commons
+                        </a>
+                    </li>
+                    <li class=" list-group-item ">
+                        <a href="#">
+                            <i class="fa-solid fa-question fa-2x" ></i> </br>Help
+                        </a>
+                    </li>
                 </ul>
-            </td>
-            <td valign="top" style="padding-right: 100px;">
-                <ul>
-                    <li><a href="../home.html">Home</a></li>
-                    <li><a href="#">Modules</a></li>
-                    <li><a href="#">Piazza</a></li>
-                    <li><a href="#">Zoom Meetings</a></li>
-                    <li><a href="index.html">Assignments</a></li>
-                    <li><a href="#">Quizzes</a></li>
-                    <li><a href="../grades.html">Grades</a></li>
-                    <li><a href="#">People</a></li>
-                    <li><a href="#">Panopto Video</a></li>
-                    <li><a href="#">Discussions</a></li>
-                    <li><a href="#">Announcements</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Files</a></li>
-                    <li><a href="#">Rubrics</a></li>
-                    <li><a href="#">Outcomes</a></li>
-                    <li><a href="#">Collaborations</a></li>
-                    <li><a href="#">Syllabus</a></li>
-                    <li><a href="../settings/course-details.html">Settings</a></li>
-                </ul>
-            </td>
-            <td valign="top" style="padding-top: 20px">
-                <form id="edit-form">
-                    <select>
-                        <option value="VAL1" selected>SpeedGrader</option>
-                    </select>
-                    <hr width="230%" align="left"> 
-                    <h3>Assignment Name</h3>
-                    <input type="text"  id="assignment-name" value="A1 - ENV + HTML"/><br/><br/>
-
-                    <textarea >This is the assignment description.</textarea><br/><br/>
-                    <label for="points" >Points</label><br/>
-                    <input type="text"  id="points" value="100"/><br/><br/>
-                    <label for="assignment-group" >Assignment Group</label><br/>
-                    <select id="assignment-group">
-                        <option value="VAL1" selected>ASSIGNMENTS</option>
-                    </select><br/><br/>
-                    <label for="display-grade-as" >Display Grade as</label><br/>
-                    <select id="display-grade-as">
-                        <option value="VAL1" selected>Percentage</option>
-                    </select><br/><br/>
-                    <label for="submission-type" >Submission Type</label><br/>
-                    <select id="submission-type">
-                        <option value="VAL1" selected>Online</option>
-                    </select><br/><br/>
-
-                    <label>Online Entry Options</label><br/>
-                    <input type="checkbox" value="TextEntry"
-                    name="text-entry" id="text-entry-Checkbox"/>
-                    <label for="text-entry-Checkbox">Text Entry</label><br/>
+            </div>
+            
+            <div class="col" >
+                <div class="row mt-4">
+                    <div class="col">
+                        <div class="wd-header-expand d-flex  align-items-center">
+                            <i class="fa-solid fa-bars fa-2x wd-header-icon"></i>
+                            <nav style="--bs-breadcrumb-divider: '>';">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#" class="wd-kanbas-breadcrumbs">CS4530.11744.202310</a></li>
+                                    <li class="breadcrumb-item active"><a href="./index.html" class="wd-kanbas-breadcrumbs">Assignments</a></li>
+                                    <li class="breadcrumb-item active">A1-ENV+</li>
+                                </ol>
+                            </nav>
+                            
+                        </div>
+                        <hr>
+                    </div>
                     
-                    <input type="checkbox" value="WebsiteURL"
-                    name="website-url" id="website-url-checkbox"/>
-                    <label for="website-url-checkbox">Website URL</label><br/>
-                    <input type="checkbox" value="MediaRecordings"
-                    name="media-recordings" id="media-recordings-checkbox"/>
-                    <label for="media-recordings-checkbox">Media Recordings</label><br/>
+                </div>
 
-                    <input type="checkbox" value="StudentAnnotation"
-                    name="student-annotation" id="student-annotation-checkbox"/>
-                    <label for="student-annotation-checkbox">Student Annotation</label><br/>
+                <div class="row">
 
-                    <input type="checkbox" value="FileUploads"
-                    name="file-uploads" id="file-uploads-checkbox"/>
-                    <label for="file-uploads-checkbox">File Uploads</label><br/><br/>
-
-                    <label for="submission-attemts">Submission Attemts</label><br/>
-                    <select id="submission-attemts">
-                        <option value="VAL1" selected>Unlimited</option>
-                    </select><br/><br/>
-
-                    <label for="plagiarism-review">Plagiarism Review</label><br/>
-                    <select id="plagiarism-review">
-                        <option value="VAL1" selected>None</option>
-                    </select><br/><br/>
-
-
-                    <label>Group Assignment</label><br/>
-                    <input type="checkbox" value="GroupAssignment"
-                    name="group-assignment" id="group-assignment-Checkbox"/>
-                    <label for="group-assignment-Checkbox">This is a group assignment</label><br/><br/>
-
-                    <label>Peer Reviews</label><br/>
-                    <input type="checkbox" value="PeerReviews"
-                    name="peer-reviews" id="peer-reviews-Checkbox"/>
-                    <label for="peer-reviews-Checkbox">Require Peer Reviews</label><br/><br/>
-
-                    Assign<br/>
-                    <label for="assign" >Assign to</label><br/>
-                    <input type="text"  id="assign" value="Everyone"/><br/><br/>
-
-                    <label for="due-date">Due</label><br/>
-                    <input type="date" id="due-date" value="2021-01-01"/><br/><br/>
-
-                    <label for="available-from">Available from</label><br/>
-                    <input type="date" id="available-from" value="2021-01-01"/><br/><br/>
-
-                    <label for="until-date">Until</label><br/>
-                    <input type="date" id="until-date" value="2021-01-01"/><br/><br/>
-
-
-                    <a href="index.html"><button type="button">Cancel</button></a>
-                    <a href="index.html"><button type="button">Save</button></a>
-                    
-                    
-                </form>
-            </td>
-            <td>
+                    <div class="col col- 2 wd-acc-nav d-sm-block sticky-top">
+                        <ul class="wd-acc-nav-list list-group">
+                            <li class="list-group-item"><a href="../home.html">Home</a></li>
+                        <li class="list-group-item"><a href="#">Piazza</a></li>
+                        <li class="list-group-item"><a href="#">Zoom Meetings</a></li>
+                        <li class="list-group-item"><a href="#">Modules</a></li>
+                        <li class="list-group-item"><a href="#">Quizzes</a></li>
+                        <li class="list-group-item active"><a href="../assignments/index.html">Assignments</a></li>
+                        <li class="list-group-item"><a href="../grades/index.html">Grades</a></li>
+                        <li class="list-group-item"><a href="#">People</a></li>
+                        
+                        <li class="list-group-item">
+                            <a href="#">Microsoft Teams</a></br>
+                            <a href="#">Meetings</a>
                 
-            </td>
-        </tr>
-    </table>
+                            
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">FACT Reporting and</a></br>
+                            <a href="#">Photo Roster</a>
+                            
+                            
+                        </li>
+                            <div class="col">
+                                <li class="list-group-item"><a href="#">Discussions</a><i class="fa-regular fa-eye-slash text-muted"></i></li>
+                                <li class="list-group-item"><a href="#">Announcements</a><i class="fa-regular fa-eye-slash text-muted"></i></li>
+                                <li class="list-group-item"><a href="#">Pages</a><i class="fa-regular fa-eye-slash text-muted"></i></li>
+                                <li class="list-group-item"><a href="#">Files</a><i class="fa-regular fa-eye-slash text-muted"></i></li>
+                                <li class="list-group-item"><a href="#">Rubrics</a><i class="fa-regular fa-eye-slash text-muted"></i></li>
+                                <li class="list-group-item"><a href="#">Outcomes</a><i class="fa-regular fa-eye-slash text-muted"></i></li>
+                                <li class="list-group-item"><a href="#">Collaborations</a><i class="fa-regular fa-eye-slash text-muted"></i></li>
+                                <li class="list-group-item"><a href="#">Syllabus</a><i class="fa-regular fa-eye-slash text-muted"></i></li>
+                                <li class="list-group-item"><a href="#">Progress Report</a><i class="fa-regular fa-eye-slash text-muted"></i></li>
+                                <li class="list-group-item"><a href="../settings/course-details.html">Settings</a><i class="fa-regular fa-eye-slash text-muted"></i></li>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <div class="row mt-1 ">
+                            
+                            <div class="col">
+                                <div class="float-end">
+                                  <i class="fa-regular fa-circle-check wd-color-green "></i> <span class="wd-color-green">Published</span>
+                                  <button class="btn btn-secondary"><i class="fa-solid fa-ellipsis-vertical float-end"></i></button>
+                                </div>
+                                       
+                                  
+                                </div>
+                            
+                            
+                        </div>
+                        <hr>
+                        <div class="row mt-1">
+                            <div class="col mt-1">
+                                <div class="form-group wd-assignment-edit-section">
+                                    <label for="text-name" class="control-label wd-assignment-edit-section">Assignment Name</label>
+                                    <input type="text" id="text-name" class="form-control" name="text-name"
+                                        value="A1 - ENV + HTML" />
+                                </div>
+        
+                                <div class="wd-assignment-edit-section">
+                                    <textarea class="form-control"
+                                        rows="3">This assignment describes how to install the development environment for creating and working with Web applications we will be developing this semester.We will add new content every week, pushing the code to a GitHub source repository, and then deploying the content to a remote server hosted on Netlify.</textarea>
+                                </div>
+                                <div class="wd-assignment-edit-section">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="form-group row wd-assignment-edit-section">
+                                                <label for="points" class="col-sm-2 control-label sub-label">Points</label>
+                                                <div class="col-sm-6">
+                                                    <input type="text" class="form-control" id="points" value="100">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row wd-assignment-edit-section">
+                                                <label class="col-sm-2 control-label sub-label" for="assignmentGroup">Assignment
+                                                    Group</label>
+                                                <div class="col-sm-6">
+                                                    <select class="form-select" id="assignmentGroup">
+                                                        <option>ASSIGNMENTS</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row wd-assignment-edit-section">
+                                                <label class="col-sm-2 control-label sub-label" for="gradeMeasures">Display Grade
+                                                    as</label>
+                                                <div class="col-sm-6">
+                                                    <select class="form-select" id="gradeMeasures">
+                                                        <option>Percentage</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row wd-assignment-edit-section">
+                                                <label class="col-sm-2 control-label sub-label" for="submissionType">Submission
+                                                    Type</label>
+                                                <span class="border col-sm-6 wd-assignment-edit-section">
+                                                    <div class="col-sm-6 wd-assignment-edit-section">
+                                                        <select class="form-select" id="submissionType">
+                                                            <option>Online</option>
+                                                        </select>
+                                                    </div>
+                                                    <p style="font-weight: bold;">Online entry options</p>
+                                                    <div class="form-check wd-assignment-edit-section">
+                                                        <label class="form-check-label" for="chkbox-textEntry">
+                                                            <input type="checkbox" class="form-check-input"
+                                                                id="chkbox-textEntry" checked>Text Entry
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check wd-assignment-edit-section">
+                                                        <label class="form-check-label" for="chkbox-website">
+                                                            <input type="checkbox" class="form-check-input"
+                                                                id="chkbox-website" checked>Website URL
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check wd-assignment-edit-section">
+                                                        <label class="form-check-label" for="chkbox-media">
+                                                            <input type="checkbox" class="form-check-input"
+                                                                id="chkbox-media" checked>Media Recordings
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check wd-assignment-edit-section">
+                                                        <label class="form-check-label" for="chkbox-student">
+                                                            <input type="checkbox" class="form-check-input"
+                                                                id="chkbox-student">Student Annotation
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check wd-assignment-edit-section">
+                                                        <label class="form-check-label" for="chkbox-file">
+                                                            <input type="checkbox" class="form-check-input"
+                                                                id="chkbox-file">File Uploads
+                                                        </label>
+                                                    </div>
+                                                </span>
+                                            </div>
+                                            <div class="form-group row wd-assignment-edit-section">
+                                                <label class="col-sm-2 control-label sub-label" for="submissionType">Assign</label>
+                                                <span class="border col-sm-6 wd-assignment-edit-section">
+                                                    <form>
+                                                        <div class="form-group wd-assignment-edit-section">
+                                                            <label for="assignTo" class="col-sm-2 control-label">Assign
+                                                                To</label>
+                                                            <div class="col-sm-6 wd-assignment-edit-section">
+                                                                <input type="text" class="form-control" id="assignTo"
+                                                                    value="Everyone">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group wd-assignment-edit-section">
+                                                            <label for="date" class="col-1-form-label">Due</label>
+                                                            <div class="col-12">
+                                                                <div class="input-group date" id="datepicker">
+                                                                    <input type="text" class="form-control" id="date" value="Sep 18,2023 11:59 PM"/>
+                                                                    <span class="input-group-append">
+                                                                        <span class="input-group-text bg-light d-block">
+                                                                            <i class="fa fa-calendar"></i>
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row wd-assignment-edit-section">
+                                                            <div class="col-6">
+                                                            <label for="date" class="col-2-form-label">Available</label>
+                                                            <div class="col-12">
+                                                                <div class="input-group date" id="datepicker">
+                                                                    <input type="text" class="form-control" id="date" value="Sat 6, 2023"/>
+                                                                    <span class="input-group-append">
+                                                                        <span class="input-group-text bg-light d-block">
+                                                                            <i class="fa fa-calendar"></i>
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                            <div class="col-6">
+                                                                <label for="date" class="col-2-form-label">Until</label>
+                                                                <div class="col-12">
+                                                                    <div class="input-group date" id="datepicker">
+                                                                        <input type="text" class="form-control" id="date" placeholder="MM/DD/YYYY"/>
+                                                                        <span class="input-group-append">
+                                                                            <span class="input-group-text bg-light d-block">
+                                                                                <i class="fa fa-calendar"></i>
+                                                                            </span>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        <div class="form-group wd-assignment-edit-section">
+                                                            <div class="col-sm-12 wd-assignment-edit-section" style="justify-content: center;">
+                                                                <button type="button" class="btn btn-secondary" style="width: 100%;"><i class="fas fa-plus"></i>Add</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+        
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-5">
+                                      <div class="col-7">
+                                        <input type="checkbox" ><span class="ms-2 text-muted">Notify users that this content has changed</span>
+                                      </div>
+                                      <div class="col float-end">
+                                        <a href="index.html">
+                                            <button class="btn btn-secondary">Cancel</button>
+                                        </a>
+                                        <a href="index.html">
+                                            <button class="btn btn-danger">Save</button>
+                                        </a>
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div> 
+                    
+                    
+                      
+                </div>
+            </div>
+        </div>
 </body>
+
 </html>
