@@ -13,7 +13,7 @@ import VariablesAndConstants from "./VariablesAndConstants";
 import WorkingWithArrays from "./WorkingWithArrays";
 import WorkingWithFunctions from "./WorkingWithFunctions";
 
-function JavaScript() {
+function JavaScriptFunc() {
     console.log('Hello World!');
     return(
        <div>
@@ -33,4 +33,4 @@ function JavaScript() {
        </div>
     );
  }
- export default JavaScript
+ export default JavaScriptFunc
