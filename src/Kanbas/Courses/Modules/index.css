@@ -25,3 +25,8 @@
 .lesson-list {
     margin-top: 16px;
 }
+
+.module-edit-form .form-group label {
+    display: block;
+    margin-bottom: 16px; /* Adjust this value to increase or decrease the space */
+  }
