@@ -9,7 +9,7 @@ function ClickEvent() {
       <div>
         <h2>Click Event</h2>
         <button onClick={hello}>
-          Click Hello 1 </button> 
+          Click Hello 1 </button>
         <button onClick={() => hello()}>
           Click Hello 2 </button>
         <button

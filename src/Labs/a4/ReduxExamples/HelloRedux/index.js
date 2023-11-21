@@ -4,7 +4,7 @@ function HelloRedux() {
   return (
     <div>
       <h1>Hello Redux</h1>
-      <h2>{message}</h2>
+      <h2>{message}</h2> 
     </div>
   );
 }

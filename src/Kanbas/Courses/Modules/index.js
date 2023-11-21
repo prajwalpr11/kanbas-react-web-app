@@ -1,14 +1,7 @@
 import ModuleList from "./ModuleList";
 import { AiOutlineCheckCircle, AiOutlinePlus } from "react-icons/ai";
 import { FaEllipsisVertical } from "react-icons/fa6";
-import React, { useState } from "react";
-import { useParams } from "react-router-dom";
-import db from "../../Database";
-
 function Modules() {
-  const [modules, setModules] = useState(db.modules);
-  const { courseId } = useParams();
-
   return (
     <div style={{ position: "sticky" }}>
       <div>
@@ -32,8 +25,7 @@ function Modules() {
           </div>
         </div>
         <hr />
-        <ModuleList/>
-
+        <ModuleList />
       </div>
     </div>
   );

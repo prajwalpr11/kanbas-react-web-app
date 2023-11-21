@@ -24,20 +24,18 @@ function KanbasNavigation() {
   const { pathname } = useLocation();
   return (
     <div className="list-group wd-kanbas-navigation sidebar">
-      
       <Link
         key="Neu_Logo"
+        to={links[1]}
         className="list-group-item"
         style={{ marginTop: 10 }}
-        to={links[1]}
       >
         <img
-          src={process.env.PUBLIC_URL + '/images/NEU.png'}
+          src="https://i.pinimg.com/originals/08/bd/47/08bd47b365a7ad4ed868352014ecbd48.png"
           alt="NEU Logo"
           class="img-fluid"
           width="80"
           height="30"
-
         />
       </Link>
       {links.map((link, index) => (

@@ -10,5 +10,3 @@ function ChildStateComponent({ counter, setCounter }) {
     );
   }
   export default ChildStateComponent;
-  
-  
