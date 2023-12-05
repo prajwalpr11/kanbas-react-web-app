@@ -1,13 +1,16 @@
 import { Route, Routes, Navigate } from "react-router";
 import KanbasNavigation from "./KanbasNavigation";
 import Courses from "./Courses";
-import Account from "./Account";
+import Account from "./Users/account";
 import Dashboard from "./Dashboard";
 import db from "./Database";
 import { useState, useEffect } from "react";
 import store from "./store";
 import { Provider } from "react-redux";
 import axios from "axios";
+import Signin from "./Users/signin";
+import UserTable from "./Users/table";
+import Signup from "./Users/signup";
 
 function Kanbas() {
   const [courses, setCourses] = useState([]);
@@ -17,6 +20,7 @@ function Kanbas() {
     startDate: "2023-09-10",
     endDate: "2023-12-15",
   });
+  // const API_BASE = "http://localhost:4000/api";
   const API_BASE = process.env.REACT_APP_API_BASE;
   const URL = `${API_BASE}/courses`;
   const findAllCourses = async () => {
@@ -81,6 +85,10 @@ function Kanbas() {
               element={<Courses courses={courses} />}
             />
             <Route path="Calendar" element={<h1>Calendar</h1>} />
+            <Route path="/signin" element={<Signin/>}/>
+            <Route path="/signup" element={<Signup/>}/>
+            <Route path="/account" element={<Account/>}/>
+            <Route path="/table" element={<UserTable />} />
           </Routes>
         </div>
       </div>
